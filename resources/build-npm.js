@@ -124,7 +124,7 @@ function buildPackageJSON() {
     // Note: `experimental-*` take precedence over `alpha`, `beta` or `rc`.
     const versionTag = splittedTag[2] ?? splittedTag[0];
     assert(
-      ['alpha', 'beta', 'rc'].includes(versionTag) ||
+      ['alpha', 'beta', 'rc', 'sp1'].includes(versionTag) ||
         versionTag.startsWith('experimental-'),
       `"${versionTag}" tag is not supported.`,
     );
